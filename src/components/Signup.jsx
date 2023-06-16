@@ -24,7 +24,7 @@ function Login() {
                         alert("User already exists")
                     }
                     else if (res.data == "notexist") {
-                        window.location.href="/home";
+                        navigate('/home', { state: { email: email } })
                     }
                 })
                 .catch(e => {
@@ -43,7 +43,7 @@ function Login() {
 
     return (
         <div className="container">
-            <h1 className="brand"><span>SIGN</span> UP</h1>
+            <h1 className="brand">SIGN UP</h1>
             <div className="wrapper">
                 <div className="company-info">
 

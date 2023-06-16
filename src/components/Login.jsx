@@ -20,7 +20,7 @@ function Login() {
             })
                 .then(res => {
                     if (res.data == "exist") {
-                        window.location.href = "/home";
+                        navigate("/home", { state: { email: email } })
                     }
                     else if (res.data == "notexist") {
                         alert("User does not exists")
@@ -42,7 +42,7 @@ function Login() {
 
     return (
         <div className="container">
-            <h1 className="brand"><span>Log</span>in</h1>
+            <h1 className="brand">Login</h1>
             <div className="wrapper">
                 <div className="company-info">
 

@@ -1,11 +1,21 @@
-const express = require("express")
-const collection = require("./mongo")
-const cors = require("cors")
+import express from "express";
+import cors from "cors";
+import mongoose from "mongoose";
+import collection from "./src/Models/User.js";
+
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
+// Mongoose Setup
+mongoose.connect("mongodb://0.0.0.0:27017/pokemon", {
+
+}).then(() => {
+    console.log(`mongo connected`);
+}).catch((error) => {
+    console.log(`${error} did not connect`);
+});
 
 
 app.get("/", cors(), (req, res) => {

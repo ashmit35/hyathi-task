@@ -1,8 +1,8 @@
-import Home from "./components/Home";
-import Signup from "./components/Signup";
-import Login from "./components/Login";
+import Home from "./components/Home.jsx";
+import Signup from "./components/Signup.jsx";
+import Login from "./components/Login.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from 'react';
+import MyPokemons from "./components/MyPokemons.jsx";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/MyPokemons" element={<MyPokemons />} />
         </Routes>
       </Router>
     </div>
