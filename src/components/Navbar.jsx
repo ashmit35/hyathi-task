@@ -15,7 +15,8 @@ const Navbar = ({ myPokemons }) => {
                 <img src={'https://www.freepnglogos.com/uploads/pokemon-symbol-logo-png-31.png'} alt="logo" height={80} width={80} />
                 <Typography sx={{
                     fontSize: { xs: '20px', md: '25px' },
-                    marginLeft: { xs: '2px', md: '20px' }
+                    marginLeft: { xs: '2px', md: '20px' },
+                    color: 'white'
                 }}
                 >
                     POKEMON DETAILS

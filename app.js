@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
-import collection from "./src/Models/User.js";
+import collection from "./src/models/User.js";
 
 const app = express()
 app.use(express.json())

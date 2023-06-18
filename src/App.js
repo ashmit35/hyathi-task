@@ -3,7 +3,7 @@ import Signup from "./components/Signup.jsx";
 import Login from "./components/Login.jsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MyPokemons from "./components/MyPokemons.jsx";
-
+import './index.css'
 function App() {
   return (
     <div className="App">
