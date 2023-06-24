@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
 // Mongoose Setup
-mongoose.connect("mongodb://0.0.0.0:27017/pokemon", {
+mongoose.connect("mongodb+srv://admin:5hDWmNHBCMULUUY7@cluster0.fpqnokz.mongodb.net/?retryWrites=true&w=majority/pokemon", {
 
 }).then(() => {
     console.log(`mongo connected`);
